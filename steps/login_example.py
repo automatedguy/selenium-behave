@@ -1,6 +1,9 @@
+from behave import given, then, when
+
+
 @given('I go to my login form')
 def go_to_login_form(context):
-	context.driver.get('http://crossbrowsertesting.github.io/login-form.html')
+	context.driver.get('https://appdirect.com')
 
 @then('the title should be {text}')
 def verify_title(context, text):
